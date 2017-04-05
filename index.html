@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<title>Mon Style</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!-- Para poner el texto en español -->
+<meta name="description" content="Mon Style">
+<meta name="keywords" content="Ropa, zapatos, perfume, accesorios, mujer, regalos">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/w3-theme-pink.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<!--SLIDE-->
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="fonts.css">
+
+<!-- Favicon -->
+<link href="images/favicon.jpg" type="images/x-icon" rel="shortcut icon" />
+
+<!--[if lte IE 8]><link type="text/css" rel="stylesheet" href="css/ie-ancient.css" /><![endif]-->
+<!--[if lt IE 9]><script src="/r10/html5shiv.js"></script><![endif]-->
+
+<body class="w3-theme">
+
+
+<!-- Side Navigation -->
+<nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-xxxlarge w3-text-theme">Cerrar<i class="fa fa-remove"></i></a>
+  <a href="index.html">Inicio</a>
+  <a href="ropa.html">Ropa</a>
+  <a href="zapatos.html">Zapatos</a>
+  <a href="bolsas.html">Bolsas</a>
+  <a href="accesorios.html">Accesorios</a>
+  <a href="fragancias.html">Fragancias</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-opennav"></i> 
+  <div class="w3-center">
+  	<h1 class="w3-animate-bottom"><font face="barrio">MON STYLE</font></h1>
+  </div>
+</header>
+
+<!-- Inicio sección información-->
+<div class="w3-white w3-center">
+	<h1><font face="unkempt">PROMOCIONES</font></h1>
+
+<!--Slide-->
+<div class="main">
+
+<!--<h2 class="w3-center">Blusa rosa</h2>
+<div class="w3-content" style="max-width:800px;position:relative">
+
+<img class="mySlides w3-animate-opacity" src="image/1.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="image/2.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="image/3.jpg" style="width:100%">
+<img class="mySlides w3-animate-opacity" src="image/4.jpg" style="width:100%">
+
+<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">&#10094;</a>
+<a class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">&#10095;</a>
+</div>-->
+
+  <div class="slides">
+    <img src="image/1.jpg">
+    <img src="image/2.jpg">
+    <img src="image/3.jpg">
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.js"></script>
+
+<script>
+$(function(){
+  $(".slides").slidesjs({
+    
+  });
+});
+
+</script>
+
+	<img src="images/ROPA/Blusa_estam.jpg" alt="" style="max-height:300px"/>
+	<h4><font face="unkempt">Blusa estampada</font></h4>
+	<h4>349.00 MXN</h4>
+
+	<img src="images/ROPA/blusa_canale.jpg" alt="" style="max-height:300px"/>
+	<h4><font face="unkempt">Blusa canale</font></h4>
+	<h4>199.00 MXN</h4>
+
+	<img src="images/ROPA/jeans_bordado.jpg" alt="" style="max-height:300px"/>
+	<h4><font face="unkempt">Jeans bordados</font></h4>
+	<h4>699.00 MXN</h4>
+
+	<img src="images/ROPA/jeans_push.jpg" alt="" style="max-height:300px"/>
+	<h4><font face="unkempt">Jeans push up</font></h4>
+	<h4>599.00 MXN</h4>
+
+</div> <!-- Fin sección información -->
+
+
+<div id="googleMap" style="width:100%;height:420px;"></div>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+var subdireccion = new google.maps.LatLng(17.552580, -99.504143);
+
+function initialize() {
+var mapProp = {
+  center: subdireccion,
+  zoom: 17,
+  scrollwheel: false,
+  draggable: true,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: subdireccion,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark">
+  <div class="w3-row">
+    <div class="w3-half w3-container">
+        <h4 style="border-bottom: dotted">Quintana Roo No. 5 Col. Centro,<br>Chilpancingo, Guerrero <br>CP. 39000</h4>
+        
+        <h4 ><i class="fa fa-phone"></i> 01 747 115 7248</h4>
+        <a href="#" ><i class="fa fa-envelope"></i> monstyle@ventas.com</a>
+        <p>VISTE A TU ESTILO</p>
+    </div>
+    <div class="w3-half w3-container">
+    <!--REDES SOCIALES-->
+        <h3>Síguenos en redes sociales</h3>
+        
+       <!-- <a href="https://www.facebook.com/Mon-Style-1794154730903662/" target="_blank"><img alt="siguenos en facebook" height="40" src="http://3.bp.blogspot.com/-MQuocq7OzfU/UiXwUY81yQI/AAAAAAAAB0Q/h6-R_R2-buI/s1600/face.png" title="siguenos en facebook" width="40" /></a>
+
+        <a href="URL-Twitter" target="_blank"><img alt="siguenos en Twitter" height="40" src="http://2.bp.blogspot.com/-ZaTYz5sdFmc/UiX1V-AhNLI/AAAAAAAAB6M/ufa5OqT3x4o/s1600/Twitter+alt+4.png" title="siguenos en Twitter" width="40" /></a>
+		
+		<a href="URL-youtube" target="_blank"><img alt="Canal de youtube" height="40" src="http://4.bp.blogspot.com/-NFK4YtYPiXw/UiX1X0rq9pI/AAAAAAAAB7w/l_cIRw8Cij0/s1600/Youtube+alt+2.png" title="Canal de youtube" width="40" /></a>
+
+		<a href="URL-Instagram" target="_blank"><img alt="sígueme en Instagram" height="40" src="http://1.bp.blogspot.com/-y2Hmt1c7DO8/UidPHZf07cI/AAAAAAAAB_4/VoI2-auBvNU/s1600/instagram2.png" title="sígueme en Instagram" width="40" /></a> -->
+
+
+    <h1><a href="https://www.facebook.com/adonai.herreragonzalez?fref=ts" ><i class="fa fa-facebook"></i> </a></h1>
+    <h1><a href="https://www.instagram.com/damarismartiinez/" ><i class="fa fa-instagram"></i> </a></h1>
+    <h1><a href="https://www.youtube.com/channel/UCLc3KyWnTgy_YSsQ0Fe1zHw" ><i class="fa fa-youtube"></i> </a></h1>
+    <h1><a href="https://twitter.com/" ><i class="fa fa-twitter"></i> </a></h1> 
+       
+    </div>
+  </div>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme w3-padding">Ir arriba</span>&nbsp;   
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+
+  <!-- Script for Sidenav, Tabs, Accordions, Progress bars and slideshows -->
+  <script>
+  // Side navigation
+  function w3_open() {
+    var x = document.getElementById("mySidenav");
+    x.style.width = "65%";
+    x.style.textAlign = "center";
+    x.style.fontSize = "50px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+  }
+
+  // Tabs
+  function openCity(evt, cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    var activebtn = document.getElementsByClassName("testbtn");
+    for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-theme-dark", "");
+    }
+
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " w3-theme-dark";
+  }
+
+  var mybtn = document.getElementsByClassName("testbtn")[0];
+  mybtn.click();
+
+  // Accordions
+  function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      x.previousElementSibling.className += " w3-theme-dark";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+      x.previousElementSibling.className = 
+      x.previousElementSibling.className.replace(" w3-theme-dark", "");
+    }
+  }
+
+  // Slideshows
+  var slideIndex = 1;
+
+  function plusDivs(n) {
+    slideIndex = slideIndex + n;
+    showDivs(slideIndex);
+  }
+
+  function showDivs(n) {
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+
+  showDivs(1);
+
+  // Progress Bars
+  function move() {
+    var elem = document.getElementById("myBar");   
+    var width = 1;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width == 100) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        document.getElementById("demoprgr").innerHTML = width * 1  + '%';
+      }
+    }
+  }
+
+
+  // Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+
+  </script>
+
+</body>
+</html>
